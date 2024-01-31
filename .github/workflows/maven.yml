@@ -38,6 +38,6 @@ jobs:
        GITHUB_TOKEN: ${{ github.token }}
      with:
        upload_url: ${{ steps.create_release.outputs.upload_url }}
-       asset_path: ./target/nexus-repository-chef-${{ steps.version.outputs.version }}-bundle.kar
-       asset_name: nexus-repository-chef-${{ steps.version.outputs.version }}-bundle.kar
+       asset_path: ./target/nexus-repository-cargo-${{ steps.version.outputs.version }}-bundle.kar
+       asset_name: nexus-repository-cargo-${{ steps.version.outputs.version }}-bundle.kar
        asset_content_type: application/zip
